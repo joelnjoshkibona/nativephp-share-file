@@ -1,0 +1,26 @@
+{
+    "namespace": "ShareFile",
+
+    "bridge_functions": [
+        {
+            "name": "Share.File",
+            "android": "com.blutrixx.plugins.sharefile.ShareFunctions.ShareFile",
+            "android_params": ["activity"],
+            "description": "Opens Android's share list with a file: { title, message, filePath }"
+        },
+        {
+            "name": "Share.Url",
+            "android": "com.blutrixx.plugins.sharefile.ShareFunctions.ShareUrl",
+            "android_params": ["activity"],
+            "description": "Opens Android's share list with a link: { title, text, url }"
+        }
+    ],
+
+    "android": {
+        "min_version": 26
+    },
+
+    "ios": {
+        "min_version": "18.0"
+    }
+}

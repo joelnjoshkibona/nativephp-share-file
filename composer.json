@@ -1,0 +1,25 @@
+{
+    "name": "blutrixx/nativephp-share-file",
+    "description": "NativePHP Mobile plugin: Android's share list for a file or a link (Share.File, Share.Url), the calls NativePHP's Share facade makes that v4's core no longer answers.",
+    "type": "nativephp-plugin",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Blutrixx\\ShareFile\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Blutrixx\\ShareFile\\ShareFileServiceProvider"
+            ]
+        },
+        "nativephp": {
+            "manifest": "nativephp.json"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "nativephp/mobile": "^4.0"
+    }
+}
